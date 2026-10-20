@@ -1,0 +1,25 @@
+# Бинарные файлы и выгрузки баз данных
+*.cf
+*.cfu
+*.cfe
+*.dt
+*.epf
+*.erf
+
+# Временные файлы 1С
+*.log
+*.tmp
+*.txt
+~*
+1Cv8Log/
+1Cv8Temp/
+*.hic
+*.hpf
+
+# Настройки среды разработки  
+.project
+.classpath
+.settings/
+.idea/
+.env
+.gigaide

@@ -1,0 +1,11 @@
+# Автоматически определять текстовые файлы и нормализовать их
+* text=auto
+
+# Для конфигураций 1С принудительно используем LF
+*.xml text eol=lf
+*.bsl text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
