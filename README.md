@@ -21,5 +21,11 @@
 4. Указать путь к корню репозитория, где лежат XML.
 5. Нажать **F7** (Обновить конфигурацию базы данных).
 
+## Инструкция «Как обновлять конфигурацию» (Google Docs)
+https://docs.google.com/document/d/1RGQTaiZim4uwyx6s3WE9L5QbrSQPUH1ECkYeNvvY298/edit?tab=t.0#heading=h.h0l8bkpajfjo
+
+##  Инструкция «Как отлаживать в 1С» (Google Docs)
+https://docs.google.com/document/d/1iQSJirKgCIpa23z-VqwgqLWzmhIcBbbxWkFACG2Zzww/edit?tab=t.0#heading=h.9afwolxpkxse
+
 ## Автор
 *Егор*
