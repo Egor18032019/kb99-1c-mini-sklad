@@ -68,7 +68,6 @@
 				<ExtendedTooltip name="СписокТоваровУправлениеПоискомРасширеннаяПодсказка" id="28"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="BeforeDeleteRow">СписокТоваровПередУдалением</Event>
 				<Event name="OnStartEdit">СписокТоваровПриНачалеРедактирования</Event>
 				<Event name="AfterDeleteRow">СписокТоваровПослеУдаления</Event>
 			</Events>
