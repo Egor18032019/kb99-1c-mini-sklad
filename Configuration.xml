@@ -48,7 +48,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor/>
+			<Vendor>Егор</Vendor>
 			<Version/>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -253,6 +253,7 @@
 			<Subsystem>МиниСклад</Subsystem>
 			<Catalog>Товары</Catalog>
 			<Catalog>Контрагенты</Catalog>
+			<Catalog>Склады</Catalog>
 			<Document>Поступление</Document>
 			<Document>Реализация</Document>
 			<Report>ОстаткиТоваров</Report>
