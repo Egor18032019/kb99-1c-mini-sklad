@@ -30,7 +30,12 @@
 	ОстаткиТоваровОстатки.Склад КАК Склад,
 	ОстаткиТоваровОстатки.КоличествоОстаток КАК КоличествоОстаток
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.Остатки(&amp;Период) КАК ОстаткиТоваровОстатки</query>
+	РегистрНакопления.ОстаткиТоваров.Остатки(
+			ВЫБОР
+				КОГДА &amp;Период = ДАТАВРЕМЯ(1, 1, 1)
+					ТОГДА ТекущаяДата()
+				ИНАЧЕ &amp;Период
+			КОНЕЦ, ) КАК ОстаткиТоваровОстатки</query>
 	</dataSet>
 	<totalField>
 		<dataPath>КоличествоОстаток</dataPath>
@@ -59,9 +64,22 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Товар</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоОстаток</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>8d43b1e0-caff-46c8-bf84-5bb63cf9e24a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
