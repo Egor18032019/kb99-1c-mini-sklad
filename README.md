@@ -31,4 +31,4 @@ https://docs.google.com/document/d/1RGQTaiZim4uwyx6s3WE9L5QbrSQPUH1ECkYeNvvY298/
 https://docs.google.com/document/d/1iQSJirKgCIpa23z-VqwgqLWzmhIcBbbxWkFACG2Zzww/edit?tab=t.0#heading=h.9afwolxpkxse
 
 ## Автор
-*Егор*
+*Егор Викторович*
