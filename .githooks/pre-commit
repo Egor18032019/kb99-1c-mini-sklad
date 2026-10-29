@@ -1,0 +1,20 @@
+#!/bin/sh
+# Pre-commit hook: BSL autoformat + codestyle check
+
+HOOK_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+if command -v pwsh >/dev/null 2>&1; then
+    PWSH="pwsh"
+elif command -v powershell >/dev/null 2>&1; then
+    PWSH="powershell"
+else
+    echo "[bsl-format] PowerShell not found - skipping autoformat." >&2
+    exit 0
+fi
+
+"$PWSH" -NoProfile -ExecutionPolicy Bypass -File "$HOOK_DIR/bsl-format.ps1" || exit 1
+
+# Re-stage files modified by autoformat
+git add -u
+
+exit 0

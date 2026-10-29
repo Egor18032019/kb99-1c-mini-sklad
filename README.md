@@ -32,5 +32,17 @@ https://docs.google.com/document/d/1RGQTaiZim4uwyx6s3WE9L5QbrSQPUH1ECkYeNvvY298/
 ##  Инструкция «Как отлаживать в 1С» (Google Docs)
 https://docs.google.com/document/d/1iQSJirKgCIpa23z-VqwgqLWzmhIcBbbxWkFACG2Zzww/edit?tab=t.0#heading=h.9afwolxpkxse
 
+## Git-хуки и автоформат кода
+
+Перед каждым коммитом автоматически запускается автоформат BSL-модулей
+(скрипт `.githooks/bsl-format.ps1`): убирает хвостовые пробелы, нормализует
+переводы строк на LF и гарантирует UTF-8 BOM.
+
+Если хуки не срабатывают (например, после нового клонирования), включите их:
+
+```bash
+git config core.hooksPath .githooks
+```
+
 ## Автор
 *Егор Викторович*
