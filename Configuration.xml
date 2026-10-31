@@ -251,6 +251,8 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>МиниСклад</Subsystem>
+			<CommonModule>ОбщийМодульКлиент</CommonModule>
+			<CommonModule>ОбщийМодульСервер</CommonModule>
 			<Catalog>Товары</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Склады</Catalog>

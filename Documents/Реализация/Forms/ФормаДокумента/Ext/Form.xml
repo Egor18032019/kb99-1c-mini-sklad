@@ -106,16 +106,6 @@
 					<ContextMenu name="СписокТоваровНаРеализациюТоварКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="СписокТоваровНаРеализациюТоварРасширеннаяПодсказка" id="34"/>
 				</InputField>
-				<InputField name="СписокТоваровНаРеализациюКоличество" id="35">
-					<DataPath>Объект.СписокТоваровНаРеализацию.Количество</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СписокТоваровНаРеализациюКоличествоКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="СписокТоваровНаРеализациюКоличествоРасширеннаяПодсказка" id="37"/>
-					<Events>
-						<Event name="OnChange">СписокТоваровНаРеализациюКоличествоПриИзменении</Event>
-					</Events>
-				</InputField>
 				<InputField name="СписокТоваровНаРеализациюЦенаНаРеализацию" id="38">
 					<DataPath>Объект.СписокТоваровНаРеализацию.ЦенаНаРеализацию</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -124,6 +114,16 @@
 					<ExtendedTooltip name="СписокТоваровНаРеализациюЦенаНаРеализациюРасширеннаяПодсказка" id="40"/>
 					<Events>
 						<Event name="OnChange">СписокТоваровНаРеализациюЦенаНаРеализациюПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СписокТоваровНаРеализациюКоличество" id="35">
+					<DataPath>Объект.СписокТоваровНаРеализацию.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокТоваровНаРеализациюКоличествоКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокТоваровНаРеализациюКоличествоРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">СписокТоваровНаРеализациюКоличествоПриИзменении</Event>
 					</Events>
 				</InputField>
 				<InputField name="СписокТоваровНаРеализациюСумма" id="41">
