@@ -9,16 +9,10 @@ param(
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 
-# Файлы: staged .bsl; если нет — все .bsl в Documents
-$staged = @(& git -C $repoRoot diff --cached --name-only --diff-filter=ACM 2>$null |
-    Where-Object { $_ -match '\.bsl$' })
-
-if ($staged.Count -gt 0) {
-    $files = @($staged | ForEach-Object { Join-Path $repoRoot $_ })
-} else {
-    $files = @(Get-ChildItem -Path (Join-Path $repoRoot 'Documents') -Recurse -Filter '*.bsl' -File |
-        ForEach-Object { $_.FullName })
-}
+# Файлы: все BSL-модули конфигурации (Documents, CommonModules и др.)
+$files = @(Get-ChildItem -Path $repoRoot -Recurse -Filter '*.bsl' -File |
+    Where-Object { $_.FullName -notmatch '\\.git\\|\\.dsh\\|\\.githooks\\' } |
+    ForEach-Object { $_.FullName })
 
 $fixedCount = 0
 $warnCount = 0
